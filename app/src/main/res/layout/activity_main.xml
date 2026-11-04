@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY TO-DO LIST"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#263B53"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"/>
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter your task"
+        android:inputType="textCapSentences"
+        android:padding="12dp"
+        android:backgroundTint="#477B9C"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="ADD TASK"
+        android:textSize="16sp"
+        android:onClick="addme"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="VIEW TASKS"
+        android:textSize="16sp"
+        android:onClick="show"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVED TASKS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#263B53"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No tasks added yet"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="8dp"/>
+
+    </ScrollView>
+
+</LinearLayout>
